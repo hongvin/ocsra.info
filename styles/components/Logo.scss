@@ -1,0 +1,27 @@
+.logo {
+  text-decoration: none;
+  display: flex;
+  gap: 0.25em;
+
+  .type {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    color: $text-title;
+    letter-spacing: -0.04em;
+  }
+
+  .info {
+    font-family: $font-main;
+    color: #8134d8;
+    font-weight: 600;
+    margin-bottom: -0.6em;
+    font-size: 0.6em;
+    padding: 0.15em 0.3em;
+    //border: 1px solid #8134d8;
+    border-radius: 0.625em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // bottom: 0px;
+  }
+}

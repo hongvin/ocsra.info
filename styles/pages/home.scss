@@ -1,0 +1,92 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 6rem 0;
+  @media screen and (max-width: $mobile-width) {
+    margin: 2rem 0;
+  }
+  .background {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    background: url("/background.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    @media screen and (max-width: $mobile-width) {
+      top: 20vh;
+      left: 0;
+      width: 100vw;
+      height: 60vh;
+    }
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    @media screen and (max-width: $mobile-width) {
+      text-align: initial;
+    }
+
+    h1 {
+      text-shadow: 0 0 1rem hsla(0, 0, 100, 0.6);
+      font-weight: 900;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+  }
+
+  .buttons {
+    justify-content: center;
+
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: $border-m;
+      font-size: 1.25rem;
+      font-weight: 500;
+      font-family: $font-main;
+      line-height: 1;
+      cursor: pointer;
+      transition: transform $fast;
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+    .dapp {
+      background: $text-title;
+
+      span {
+        background: $gradient-tech;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+  }
+  .others{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h3{
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+}
+body {
+  overflow-x: hidden;
+}
