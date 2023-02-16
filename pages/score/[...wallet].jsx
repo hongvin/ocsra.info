@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
 
   const query = new URLSearchParams(context.query);
   const action = query.get('action');
-  const apiHost = "https://api.ocsra.info";
+  const apiHost = process.env.API_URL == ""?"https://api.ocsra.info":process.env.API_URL;
 
   return { props: {fullAddress, action, apiHost } };
 }
