@@ -73,7 +73,7 @@ export default function Input({ fullAddress }) {
           ref={ref}
         >
           <img src="/blockchains/eth.svg" alt="Etherium" />
-          <span>Etheroum</span>
+          <span>Etherium</span>
         </li>
         
       </ul>
