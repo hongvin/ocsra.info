@@ -32,6 +32,10 @@ This repo contains only the **front-end** of the product. The API `https://api.o
 └── README.md
 ```
 
+## Simple flowchart
+
+![Flowchart](./Flowchart.png)
+
 ## How to use this code?
 
 1. Clone the repository:
