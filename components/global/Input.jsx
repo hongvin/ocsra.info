@@ -67,9 +67,7 @@ export default function Input({ fullAddress }) {
         className={`blockchains ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span class="material-symbols-outlined">
-expand_more
-</span>
+
         <li
           className="blockchainActive"
           onClick={() => setIsOpen(!isOpen)}

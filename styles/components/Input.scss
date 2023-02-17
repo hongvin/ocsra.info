@@ -43,7 +43,7 @@
     }
 
     &::before {
-      content: "expand_more";
+      content: "▼";
       font-family: $font-icon;
       font-size: 1.5rem;
       display: flex;
