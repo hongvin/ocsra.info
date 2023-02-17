@@ -64,7 +64,7 @@ export default function Input({ fullAddress }) {
   return (
     <div className="Input">
       <ul
-        className={`blockchains material-symbols-outlined ${isOpen ? "open" : ""}`}
+        className={`blockchains ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <li
